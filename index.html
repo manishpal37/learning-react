@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>I am above React</h1>
+    <div id="root">
+      <h1>Manish is here!</h1>
+    </div>
+    <h1>I am bottom React</h1>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="./App.js"></script>
+  </body>
+</html>
+
+<!-- hello world using js
+    <div id="root"></div>
+    <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Hello world from JS";
+
+      const root = document.getElementById("root");
+      root.appendChild(heading);
+    </script> 
+-->
+
+<!-- Using the above scripts using cdn links, 
+  we can use the React a js library
+
+  why there are two files : 
+  1st: react development (core react)
+  2nd: react DOM , useful for DOM(Documented Object Model) manipulations
+-->
+
+<!--
+If we move this <script src="./App.js"></script>
+ to top of line 12 then we dont got react in app js 
+so order of code matters here
+-->
+
+<!-- 
+<h1>Manish is here!</h1> is replaced by root.render in app.js file
+-->
+
+<!-- React only works in id="root" not above and bottom
+-->
